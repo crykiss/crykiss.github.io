@@ -41,7 +41,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: io.crykiss.com
+disqus_shortname: crykiss
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"

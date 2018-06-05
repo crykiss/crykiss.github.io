@@ -1,8 +1,3 @@
-----
--layout: post
--author: danny kim
-----
-
  sqlite3 를 cpp에 사용하기 위해서 검색을 하던 도중 [sqlite_modern_cpp](https://github.com/SqliteModernCpp/sqlite_modern_cpp) 프로젝트를 발견했다. c++14 스타일의 코드로 사용하기 좋아보였다. 페이지에 보니 vcpkg를 이용할 수 있도록 되어 있어서 vcpkg를 이용해서 바로 인스톨 하였다.
  
  vcpkg search sqlite

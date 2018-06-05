@@ -20,7 +20,7 @@
 
  위와 같이 구성되어야 하는데
  
- {% raw %}{% highlight cpp %}    
+ {% highlight cpp %}    
  매크로A(
    매크로
  #ifdef A
@@ -28,7 +28,7 @@
  #endif
    매크로2
    )
-{% endhighlight %}{% endraw %}
+{% endhighlight %}
 {% endhighlight %}
    
  소스가 위와 같이 되어 있다보니 매크로A 해석 중에 '#'을 만나서 발생하는 문제였다.

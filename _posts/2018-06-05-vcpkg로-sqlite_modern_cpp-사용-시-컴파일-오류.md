@@ -3,7 +3,7 @@
 -author: danny kim
 ----
 
- sqlite3 를 cpp에 사용하기 위해서 검색을 하던 도중 (sqlite_modern_cpp|https://github.com/SqliteModernCpp/sqlite_modern_cpp) 프로젝트를 발견했다. c++14 스타일의 코드로 사용하기 좋아보였다. 페이지에 보니 vcpkg를 이용할 수 있도록 되어 있어서 vcpkg를 이용해서 바로 인스톨 하였다.
+ sqlite3 를 cpp에 사용하기 위해서 검색을 하던 도중 [sqlite_modern_cpp](https://github.com/SqliteModernCpp/sqlite_modern_cpp) 프로젝트를 발견했다. c++14 스타일의 코드로 사용하기 좋아보였다. 페이지에 보니 vcpkg를 이용할 수 있도록 되어 있어서 vcpkg를 이용해서 바로 인스톨 하였다.
  
  vcpkg search sqlite
  vcpkg install sqlite-modern-cpp
@@ -12,15 +12,20 @@
  
  오류는 매크로 문자열정의 에러인데
  
+{% highlight html %}
+{% raw %}{% highlight c++ %}    
  매크로A(
    매크로
    매크로
    매크로
    매크로
-   )
-   
+   )   
+{% endhighlight %}{% endraw %}
+
+
  위와 같이 구성되어야 하는데
  
+ {% raw %}{% highlight cpp %}    
  매크로A(
    매크로
  #ifdef A
@@ -28,6 +33,8 @@
  #endif
    매크로2
    )
+{% endhighlight %}{% endraw %}
+{% endhighlight %}
    
  소스가 위와 같이 되어 있다보니 매크로A 해석 중에 '#'을 만나서 발생하는 문제였다.
  물론 내가 작성한건 아니어서 처음에는 어떻게 해야 해결이 되나 찾아봤지만

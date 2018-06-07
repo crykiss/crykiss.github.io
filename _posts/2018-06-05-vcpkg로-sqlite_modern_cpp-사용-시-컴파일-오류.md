@@ -6,35 +6,6 @@
  그런데 컴파일을 진행하려고 하니 오류가 발생되었다.
  
  오류는 매크로 문자열정의 에러인데
- 
-{% highlight html %}
-{% raw %}{% highlight c++ %}    
- 매크로A(
-   매크로
-   매크로
-   매크로
-   매크로
-   )   
-{% endhighlight %}{% endraw %}
-{% endhighlight %}
-
-{% raw %}{% highlight c++ %}    
- 매크로A(
-   매크로
-   매크로
-   매크로
-   매크로
-   )   
-{% endhighlight %}{% endraw %}
-
-{% highlight c++ %}{% raw %}
- 매크로A(
-   매크로
-   매크로
-   매크로
-   매크로
-   )   
-{% endraw %}{% endhighlight %}
 
 {% highlight c++ %}    
  매크로A(
@@ -45,10 +16,9 @@
    )   
 {% endhighlight %}
 
-
-
  위와 같이 구성되어야 하는데
-  
+
+{% highlight c++ %}    
  매크로A(
    매크로
  #ifdef A
@@ -56,7 +26,7 @@
  #endif
    매크로2
    )
-
+{% endhighlight %}
    
  소스가 위와 같이 되어 있다보니 매크로A 해석 중에 '#'을 만나서 발생하는 문제였다.
  물론 내가 작성한건 아니어서 처음에는 어떻게 해야 해결이 되나 찾아봤지만

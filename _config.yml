@@ -51,7 +51,7 @@ descriptions:
   - cat: c++
     desc: "c++ 사용 경험"
 
-  - cat: visual studio
+  - cat: "visual studio"
     desc: "visual studio 사용 경험"
 
 # Social icons and sharing options

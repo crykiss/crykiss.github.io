@@ -3,8 +3,8 @@ layout: post
 title: "vcpkg에서 static으로 링크하도록 visual studio 설정하기"
 date: 2018-06-11 14:12:00
 author: danny Kim
-categories: visual studio
-tags: jekyll welcome
+categories: "visual studio"
+tags: vcpkg "visual studio" static link
 ---
 
 vcpkg 로 install한 lib는 기본적으로 share 로 컴파일 되는데 static으로 컴파일 시키기 위해서는 설정이 필요하다.

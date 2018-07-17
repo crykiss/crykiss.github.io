@@ -3,7 +3,7 @@ layout: post
 title: "vcpkg에서 static으로 링크하도록 visual studio 설정하기"
 date: 2018-06-11 14:12:00
 author: danny Kim
-categories: "visual studio"
+category: visual studio
 tags: vcpkg "visual studio" static link
 ---
 

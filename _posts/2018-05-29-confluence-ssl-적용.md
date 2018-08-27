@@ -39,5 +39,6 @@ conf.username.com 를 호출하면 집의 PC 접속을 할 수 있게 된다.
 
 letsencrypt 의 파일을 p12로 변환하는 명령
 ```
-openssl pkcs12 -export -out certificate.p12 -inkey /etc/letsencrypt/live/.org/privkey.pem -in /etc/letsencrypt/live/.org/cert.pem -certfile /etc/letsencrypt/live/.org/chain.pem
+openssl pkcs12 -export -out certificate.p12 -inkey privkey.pem -in cert.pem -certfile chain.pem
 ```
+명령 실행 경로는 생성 시 fullchain.pem 이 표시되는 경로로 이동

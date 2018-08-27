@@ -36,3 +36,8 @@ conf.username.com 를 호출하면 집의 PC 접속을 할 수 있게 된다.
 마지막으로 앱에서 접속 확인을 해보면 성공~
 
 약 1일의 설정 시간이 걸린듯 하다.
+
+letsencrypt 의 파일을 p12로 변환하는 명령
+```
+openssl pkcs12 -export -out certificate.p12 -inkey /etc/letsencrypt/live/.org/privkey.pem -in /etc/letsencrypt/live/.org/cert.pem -certfile /etc/letsencrypt/live/.org/chain.pem
+```

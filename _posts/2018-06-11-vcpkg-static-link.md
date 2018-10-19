@@ -9,7 +9,7 @@ tags: vcpkg "visual studio" static link
 
 vcpkg 로 install한 lib는 기본적으로 share 로 컴파일 되는데 static으로 컴파일 시키기 위해서는 설정이 필요하다.
 
-'Visual Studio'의 프로젝트 파일을 열어보면 아래와 같이 'Globlas'설정이 있다.
+'Visual Studio'의 프로젝트 파일(.vcxproj)을 열어보면 아래와 같이 'Globlas'설정이 있다.
 {% highlight xml %}
   <PropertyGroup Label="Globals">
     <SccProjectName />

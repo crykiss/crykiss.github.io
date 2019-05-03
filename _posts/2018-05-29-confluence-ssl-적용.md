@@ -1,3 +1,11 @@
+---
+layout: post
+author: danny Kim
+title: "confluence ssl 적용"
+category: "atlassian"
+tags: confluence ssl font
+---
+
 기본적으로 ssl 을 confluence에서 지원하지 않는다.
 confluence나 jira는 tomcat 위에서 돌아가기 때문에
 tomcat을 ssl 설정하면 자연습럽게 confluence도 ssl 위에서 동작한다.

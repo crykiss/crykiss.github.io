@@ -8,6 +8,16 @@ tags:  vcpkg "visual studio" insatll compile
 vcpkg에서 특정 패키지를 x86-windows-static로 인스톨하는 중에 /MACHINE 설정이 없어서 기본으로 x64로 설정되어
 모듈 충돌이 발생해서 install을 할 수 없었다.
 
+![오류발생추적](https://github.com/crykiss/crykiss.github.io/blob/master/assets/images/KakaoTalk_20200424_102101299.png?raw=true)
+
+log 파일을 통해서 원인 분석
+
+![로그확인](https://github.com/crykiss/crykiss.github.io/blob/master/assets/images/KakaoTalk_20200424_102154809.png?raw=true)
+
+기본값으로 x64가 지정되서 x86 과 충돌되는 모습
+
+![원본소스경로](https://github.com/crykiss/crykiss.github.io/blob/master/assets/images/KakaoTalk_20200424_102239555.png?raw=true)
+
 log 파일을 통해서 원인 분석
 
 기본값으로 x64가 지정되서 x86 과 충돌되는 모습

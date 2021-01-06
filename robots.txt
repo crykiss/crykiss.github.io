@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://http://io.crykiss.com/sitemap.xml

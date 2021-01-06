@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://http://io.crykiss.com/sitemap.xml
+Sitemap: http://io.crykiss.com/sitemap.xml

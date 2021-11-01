@@ -6,7 +6,7 @@ category: "go"
 tags: go govim golang error
 ---
 
-**ISSUE--
+**ISSUE**
 ```
 gotags: command not found
 ```

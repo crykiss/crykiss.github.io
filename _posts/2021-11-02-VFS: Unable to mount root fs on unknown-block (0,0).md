@@ -13,7 +13,9 @@ VFS: Unable to mount root fs on unknown-block (0,0)
 ```
 
 **Solution**
-
+복구 모드로 진입
 ```
-VBoxManage clonehd <infilename or UUID> <outfilename> --format VDI --variant Standard
+yum remove kernel
+
+yum update
 ```
